@@ -1,10 +1,21 @@
 class Station
-  attr_reader :name, :address, :fuel_types, :distance
+  attr_reader :name, :fuel_types
 
-  def initialize
-    @name
-  end
-end
+  def initialize(params)
+   @name = params[:station_name]
+   @fuel_types = params[:fuel_type_code]
+ end
+
+
+ # "fuel_stations": [
+ #    {
+ #      "fuel_type_code": "ELEC",
+ #      "station_name": "Sacramento County Public Garage",
+ #      "city": "Sacramento",
+ #      "state": "CA",
+ #      "street_address": "725 7th St",
+ #      "zip": "95814",
+ #    },
 
     # 10 closest stations within 6 miles sorted by distance
     # limited to Electric and Propane

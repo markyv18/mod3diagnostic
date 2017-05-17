@@ -1,0 +1,6 @@
+<h1>here are your alternative fuel stations nearby</h1>
+
+<% @stations.each do |station| %>
+<strong> <%= station.name %> </strong> <br>
+<%= station.fuel_types %> <br>
+<% end %>
