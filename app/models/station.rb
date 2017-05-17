@@ -2,8 +2,9 @@ class Station
   attr_reader :name, :address, :fuel_types, :distance
 
   def initialize
-
-
+    @name
+  end
+end
 
     # 10 closest stations within 6 miles sorted by distance
     # limited to Electric and Propane
