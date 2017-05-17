@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
 
-gem 'rspec'
+gem 'capybara'
+gem 'database_cleaner'
+gem 'faker'
+gem 'launchy'
+gem 'rspec-rails'
 gem 'factory_girl'
 gem 'pry'
 gem 'faraday'
