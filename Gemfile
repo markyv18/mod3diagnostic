@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'omniauth'
 gem 'capybara'
 gem 'database_cleaner'
 gem 'faker'
