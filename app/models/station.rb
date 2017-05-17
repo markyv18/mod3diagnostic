@@ -6,7 +6,9 @@ class Station
    @fuel_types = params[:fuel_type_code]
  end
 
+ def find_stations
 
+end
  # "fuel_stations": [
  #    {
  #      "fuel_type_code": "ELEC",
