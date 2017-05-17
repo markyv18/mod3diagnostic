@@ -6,7 +6,7 @@ describe 'as a user' do
 
   context 'when i visit the root path' do
     it 'expect to see a search form' do
-      visit('/')
+      visit '/'
       expect(current_path).to eq '/'
       expect(page).to have_content("zipcode")
       expect(page).to have_content("Searching for Alternative Fuel Stations")
@@ -32,15 +32,11 @@ describe 'as a user' do
   # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
   # And the stations should be limited to Electric and Propane
   # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
-    it 'i should also see 10 closest stations within 6 miles sorted by distance to them and only electric and propane' do
+    xit 'i should also see 10 closest stations within 6 miles sorted by distance to them and only electric and propane' do
 
       Faraday.get()
-      within(".search_form") do
-      fill_in "q", with: "80203"
 
-      click_link('Locate')
-
-      expect(current_path).to eq('/search')
       expect(page).to have_content("80203")
+    end
   end
 end
